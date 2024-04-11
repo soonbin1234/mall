@@ -44,7 +44,7 @@
 </style>
 <body>
 
-	<h1 align="center">앙앙 서점</h1>
+	<h1 align="center">Book 스토리</h1>
  <% 
 if(session.getAttribute("userid")!=null){
  %> 
@@ -91,10 +91,6 @@ if(session.getAttribute("userid")!=null){
     <br><br><br><br><br><br>
 
 	<table align="center" style=width:50%>
-	 	<tbody ><tr><th>하이미디어 책방</th></tr>
-		 <tr><td>
-				검색엔진
-		 </td></tr></tbody>
 		  <tr>	
 		 	<td> <input type="text" id="bookTitle" name="bookTitle" style=width:94% placeholder="검색어를 입력하시오"></td>
       		<td> <button id="btnSearch">검색</button></td>
@@ -344,18 +340,6 @@ $('#r').hover(function() {
 	$(this).css("background-color", "#5882FA");
 	$('#q,#e,#w').css("background-color","white");
 })
-
-
-
-
-
-
-
-	
-	
-
-
-
 
 
 function getList(){
